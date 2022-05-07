@@ -1,0 +1,365 @@
+:root{
+    --black-kely:#0D0E09;
+    --Noir:#000000;
+    --gris-claire:#C4C4C4;
+    --blanc:#FFFF;
+    --red:#B11313;
+    --bleu:#19587D;
+    --jaune-claire:#F8F184;
+    --jaune-foncé:#FFFF00;
+
+
+    --couleur1:#eddebfd3;
+    --couleur2:#19587D;
+    --couleur3:#8900098b;
+
+    --traite:#bcbbbd72;
+
+
+}
+
+.header1{
+    background-image: url(../Illustrations/Game/Batgame1.png);
+    background-size: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+
+}
+.header{
+  background-image: url(../Illustrations/Home/Bathome1.png);
+  background-size: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+
+}
+
+.bg-black{
+    background-color: black;
+}
+.text-justify{
+    text-align: justify;
+}
+.text-ye{
+    color: #FFFF00;
+}
+.box1{
+    margin-top: 144PX;
+    width: 40%;
+  animation: leftToRight 0.8s ease-in-out both;
+}
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  }
+  .btn1  {
+    height: 4rem;
+    padding: 0 2.8em;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  .btn-pri {
+    background: linear-gradient(90deg, rgba(237, 222, 191, 0.5), rgba(137, 0, 8, 0.5) 60%);
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+.sliders{
+    background-image: url(../Illustrations/Home/Batslider1.png);
+    background-repeat: no-repeat;
+    height: 550px;
+    animation-name: momo;
+    animation-duration: 50s !important;
+    animation-iteration-count: infinite;
+    width: 100%;
+    
+}
+.sliders .slide{
+    margin-left: 102px !important;
+    margin-right: 102px !important;
+    height: 100%;
+    
+}
+@keyframes momo {
+    10%{
+        background-image: url(../Illustrations/Home/Batslider1.png);
+    }
+    20%{
+        background-image: url(../Illustrations/Home/Batslider2.png);
+    }
+    30%{
+        background-image: url(../Illustrations/Home/Batslider3.png);
+    }
+    40%{
+        background-image: url(../Illustrations/Home/Batslider4.png);
+    }
+    50%{
+        background-image: url(../Illustrations/Home/Batslider5.png);
+    }
+    60%{
+        background-image: url(../Illustrations/Home/Batslider6.png);
+    }
+    70%{
+        background-image: url(../Illustrations/Home/Batslider7.png);
+    }
+    80%{
+        background-image: url(../Illustrations/Home/Batslider8.png);
+    }
+    90%{
+        background-image: url(../Illustrations/Home/Batslider9.png);
+    }
+    100%{
+        background-image: url(../Illustrations/Home/Batslider10.png);
+    }
+       
+}
+.slide2{
+    justify-content: space-between;
+}
+.slide2 .caSlide{
+    width: 50%;
+    background-image: linear-gradient(10deg,  var(--black-kely) 10% ,var(--couleur2)  );
+    border-radius: 20px;
+
+}
+
+.form {
+    background-image: linear-gradient(10deg,  var(--black-kely) 10% ,var(--couleur2)  );
+}
+.formulaire .contenu-formulaire{
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-top: 0;
+    padding: 50px 100px 50px 100px;
+    border-top: none !important;
+    border-bottom: none !important;
+    border: 1px solid var(--traite) ;
+}
+
+.formulaire .contenu-formulaire input {
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: var(--blanc);
+    margin: 5px 0 5px 0;
+    font-size: 12px;
+}
+
+.checkbox{
+    width: 10px;
+}
+.formulaire .contenu-formulaire select{
+    background-color: transparent;
+    color: var(--blanc);
+    width: 100%;
+    border: 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 12px;
+
+}
+.formulaire .contenu-formulaire button{
+    background-color: transparent;
+    color: var(--blanc);
+    font-size: small;
+    border: 1px solid rgba(255, 255, 255, 0.218);
+}
+/* presentation acteur batman */
+.showcases {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .showcases__card {
+    position: relative;
+    overflow: hidden;
+    width: max-content;
+  }
+  .showcases__card img {
+    transition: all 0.5s ease-out;
+  }
+  .showcases__card img:hover {
+    transform: scale(1.05);
+  }
+  .showcases__card img:hover + div {
+    opacity: 1;
+  }
+  .showcases__actor {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    border-top: solid 1px rgba(255, 255, 255, 0.25);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+  }
+  .showcases__actor figure {
+    background: linear-gradient(90deg, rgba(237, 222, 191, 0.5), rgba(137, 0, 8, 0.5) 60%);
+    border-radius: 5.6rem;
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    height: 70px;
+  }
+  .showcases__actor figure figcaption {
+    text-align: center;
+    font-size: 16px;
+    color: lightgray;
+    height: 60px;
+  }
+  .showcases__actor figure figcaption small {
+    font-size: 10px;
+  }
+  .showcases__actor figure img {
+    width: 70px;
+  }
+  
+  
+  /* slide multimedia */
+  .section-multimedia .slider {
+    position: relative;
+  }
+  .section-multimedia__slide-changer {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+  }
+  .section-multimedia #prev-slide {
+    left: 0;
+  }
+  .section-multimedia #next-slide {
+    right: 0;
+  }
+  .section-multimedia .video-slider {
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+  }
+  .section-multimedia .video-slider > * {
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 2.4rem 0;
+  }
+  .section-multimedia .video-slider__slide {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 300;
+    gap: 1rem;
+    border-radius: 1.3rem;
+    background: linear-gradient(90deg, rgba(237, 222, 191, 0.56), rgba(25, 88, 125, 0.56) 40%);
+    overflow: hidden;
+    scroll-snap-align: center;
+  }
+  .section-multimedia .video-slider__slide__img {
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+  }
+  .section-multimedia .video-slider__slide__img--1 {
+    background-image: url("../Illustrations/Home/Bathome8.png");
+  }
+  .section-multimedia .video-slider__slide__img--2 {
+    background-image: url("../illustrations/Home/Bathome10_slide_ba.png");
+  }
+  .section-multimedia .video-slider__slide__img--3 {
+    background-image: url("../illustrations/Home/Bathome11_slide_ba.png");
+  }
+  .section-multimedia .video-slider__slide__about {
+    padding: 1.4rem;
+    display: grid;
+    gap: 5px;
+  }
+  .section-multimedia .video-slider__slide__about .genre {
+    opacity: 0.8;
+  }
+  .section-multimedia .video-slider__slide__about .genre, .section-multimedia .video-slider__slide__about .tittle {
+    text-transform: uppercase;
+  }
+  .section-multimedia .video-slider__slide__about .simple-paragraph {
+    margin-top: 1.2rem;
+  }
+  .section-multimedia .video-trailer {
+    margin-top: 5.6rem;
+  }
+  .section-multimedia .video-trailer > * {
+    width: 100%;
+  }
+  .simple-paragraph {
+    line-height: 150%;
+    font-weight: 300;
+    max-width: 75ch;
+  }
+  .bevata{
+    font-size: 50px;
+  }
+
+  .titi{
+    padding-top: 100px;
+    padding-left: 200px;
+  }
+  .quizz{
+    padding:10px 152px  ;
+  }
+  .cages p{
+    padding: 10px;
+    background-color: #8b8b8b;
+    width: 500px;
+  }
+  .gris{
+    background-image: linear-gradient(to right bottom, #4f4a40, #3a4035, #243630, #112b2e, #081e2a);
+}
+.centre{
+    text-align: center;
+}
+.grey{
+      margin: auto;
+    width: 50%;
+    padding: 100px;
+}
+.gris input{
+    border-top: none ;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    width: 700px;
+}
+.bouton3 button{
+background-color: transparent;
+width: 90px;
+height: 40px;
+border-color: linear-gradient(to right, #d5e9f8, #b3d2eb, #91bcde, #6fa6d1, #4890c4);
+}
+.bouton3 a{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 12px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+h1{
+    margin: 0%;
+}
+.footer{
+background-color: black;
+text-align: center;
+padding: 150px;
+}
+
+.guillemet2{
+    height: 70px;
+float: inline-end;
+
+}
